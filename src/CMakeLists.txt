@@ -1,0 +1,1 @@
+add_executable(dnfapt main.cpp custom_exec.cpp)
