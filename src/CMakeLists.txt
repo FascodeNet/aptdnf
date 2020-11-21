@@ -1,1 +1,1 @@
-add_executable(dnfapt main.cpp custom_exec.cpp)
+add_executable(aptdnf main.cpp custom_exec.cpp)
