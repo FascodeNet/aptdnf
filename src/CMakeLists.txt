@@ -1,1 +1,1 @@
-add_executable(aptdnf main.cpp message.cpp custom_exec.cpp)
+add_executable(aptdnf main.cpp message.cpp dnf_control.cpp custom_exec.cpp)

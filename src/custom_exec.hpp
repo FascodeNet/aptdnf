@@ -7,6 +7,8 @@
 #include <unistd.h>
 namespace FascodeUtil{
     int custom_exec_v(std::vector<std::string> args);
+    int custom_exec_v(std::string,std::vector<std::string> args);
+    int custom_exec_v(char*,std::vector<std::string> args);
     template<class... T> 
     int custom_exec(T... args);
     int custom_exec_v_no_wait(std::vector<std::string> args);

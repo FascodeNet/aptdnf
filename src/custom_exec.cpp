@@ -25,6 +25,18 @@ namespace FascodeUtil{
         }
         return status;
     }
+    int custom_exec_v(std::string fname,std::vector<std::string> args){
+        std::vector<std::string> n_vector;
+        n_vector.push_back(fname);
+        for(string i:args){
+            n_vector.push_back(i);
+        }
+        return custom_exec_v(n_vector);
+    }
+    int custom_exec_v(char* fname,std::vector<std::string> args){
+        std::string fname_str=fname;
+        return custom_exec_v(fname_str,args);
+    }
     template<class... T> 
     int custom_exec(T... args){
         	std::vector<std::string> args_vector;
